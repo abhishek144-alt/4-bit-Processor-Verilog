@@ -11,6 +11,7 @@ A simple 4-bit processor designed and simulated using Verilog HDL and Xilinx Viv
 │
 ├── README.md
 ├── .gitignore
+├── schematic.png
 │
 ├── src/
 │   ├── alu.v
@@ -64,6 +65,9 @@ The processor follows a single-cycle execution flow:
 ```text
 Program Counter → Instruction Memory → Control Unit → Register File → ALU → Data Memory → Write Back
 ```
+
+### RTL Schematic
+![Processor RTL Schematic](./schematic.png)
 
 ---
 
