@@ -1,0 +1,79 @@
+# ==============================================================================
+# Vivado / Xilinx .gitignore
+# ==============================================================================
+
+# Vivado generated project directories (cache, simulation, hardware manager, runs)
+*.cache/
+*.hw/
+*.ip_user_files/
+*.runs/
+*.sim/
+*.gen/
+
+# Vivado project file and Vivado internal sources (files are organized in src/ and testbenches/)
+*.xpr
+*.srcs/
+
+
+# Vivado temporary and runtime directories
+.Xil/
+xsim.dir/
+hd_visual/
+.jobs/
+.metadata/
+
+# Vivado log, journal, and trace files
+*.jou
+*.log
+*.str
+*.pb
+*.debug
+*.dmp
+*.vds
+*.vdi
+hs_err_pid*.log
+usage_statistics_webtalk.*
+webtalk*
+clockInfo.txt
+
+# Vivado simulation waveforms and run files
+*.wdb
+*.wcfg.bak
+*.vcd
+*.rlx
+*.sdb
+xsim*.c
+xsim*.obj
+xsimk.exe
+
+# Synthesized checkpoints and bitstreams
+*.dcp
+*.bit
+*.bin
+*.ltx
+*.rpx
+*.rpt
+
+# Temporary and backup files
+*.tmp
+*.bak
+*~
+*.swp
+
+# OS-generated files
+Thumbs.db
+Desktop.ini
+.DS_Store
+
+# IDE configuration
+.vscode/
+.idea/
+
+# Waveform screenshots and documentation images (explicitly tracked)
+!waveforms/
+!screenshots/
+!*.png
+!*.jpg
+!*.jpeg
+!*.gif
+!*.svg
