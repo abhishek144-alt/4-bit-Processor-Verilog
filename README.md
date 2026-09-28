@@ -4,6 +4,45 @@ A simple 4-bit processor designed and simulated using Verilog HDL and Xilinx Viv
 
 ---
 
+## 📁 Repository Structure
+
+```text
+4-bit-Processor/
+│
+├── README.md
+├── .gitignore
+│
+├── src/
+│   ├── alu.v
+│   ├── register_file.v
+│   ├── control_unit.v
+│   ├── program_counter.v
+│   ├── instruction_memory.v
+│   ├── data_memory.v
+│   └── processor.v
+│
+├── testbenches/
+│   ├── alu_tb.v
+│   ├── register_file_tb.v
+│   ├── control_unit_tb.v
+│   ├── program_counter_tb.v
+│   ├── instruction_memory_tb.v
+│   ├── data_memory_tb.v
+│   └── processor_tb.v
+│
+└── waveforms/
+    ├── alu_waveform.png
+    ├── register_file_waveform.png
+    ├── control_unit_waveform.png
+    ├── program_counter_waveform.png
+    ├── instruction_memory_waveform.png
+    ├── data_memory_waveform.png
+    ├── processor_waveform.png
+    └── test_result.png
+```
+
+---
+
 ## Features
 
 - **4-bit ALU** (Arithmetic & Logical operations)
@@ -78,45 +117,6 @@ The processor was verified using a Verilog testbench (`processor_tb.v`).
 **TEST PASSED**
 
 ![Test Result](waveforms/test_result.png)
-
----
-
-## 📁 Repository Structure
-
-```text
-4-bit-Processor/
-│
-├── README.md
-├── .gitignore
-│
-├── src/
-│   ├── alu.v
-│   ├── register_file.v
-│   ├── control_unit.v
-│   ├── program_counter.v
-│   ├── instruction_memory.v
-│   ├── data_memory.v
-│   └── processor.v
-│
-├── testbenches/
-│   ├── alu_tb.v
-│   ├── register_file_tb.v
-│   ├── control_unit_tb.v
-│   ├── program_counter_tb.v
-│   ├── instruction_memory_tb.v
-│   ├── data_memory_tb.v
-│   └── processor_tb.v
-│
-└── waveforms/
-    ├── alu_waveform.png
-    ├── register_file_waveform.png
-    ├── control_unit_waveform.png
-    ├── program_counter_waveform.png
-    ├── instruction_memory_waveform.png
-    ├── data_memory_waveform.png
-    ├── processor_waveform.png
-    └── test_result.png
-```
 
 ---
 
