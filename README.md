@@ -11,7 +11,7 @@ A simple 4-bit processor designed and simulated using Verilog HDL and Xilinx Viv
 │
 ├── README.md
 ├── .gitignore
-├── schematic.png
+├── schematic.png                          # Top-level RTL schematic diagram
 │
 ├── src/
 │   ├── alu.v
@@ -67,7 +67,18 @@ Program Counter → Instruction Memory → Control Unit → Register File → AL
 ```
 
 ### RTL Schematic
-![Processor RTL Schematic](./schematic.png)
+<p align="center">
+  <img src="./schematic.png" alt="4-Bit Processor RTL Schematic" width="100%">
+</p>
+
+#### Key Architectural Blocks:
+- **Program Counter (`PC`)**: Generates 3-bit instruction memory addresses (`pc[2:0]`), halted via an active-low inverter when `halt` is asserted.
+- **Instruction Memory (`IMEM`)**: 8 × 8-bit ROM storing instructions fetched via address `pc[2:0]`.
+- **Control Unit (`CU`)**: Decodes instruction `opcode[2:0]` into control lines: `alu_control[2:0]`, `mem_read`, `mem_write`, `reg_write`, and `halt`.
+- **Register File (`RF`)**: 4 × 4-bit general-purpose register array (`R0`–`R3`) supporting dual simultaneous read ports and synchronous write-back.
+- **Arithmetic Logic Unit (`ALU`)**: Performs arithmetic and logical operations on inputs `A[3:0]` and `B[3:0]`, driving flags `Carry` and `Zero`.
+- **Data Memory (`DMEM`)**: 8 × 4-bit RAM supporting memory read and store operations.
+- **Multiplexer (`RTL_MUX`)**: Selects between memory load data and ALU computation results to route write-back data into the register file.
 
 ---
 
