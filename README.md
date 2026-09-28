@@ -30,16 +30,16 @@ Program Counter → Instruction Memory → Control Unit → Register File → AL
 
 ## ALU Operations
 
-| ALU Control | Operation | Description |
-| :---: | :---: | :--- |
-| `000` | **ADD** | Addition ($A + B$) |
-| `001` | **SUB** | Subtraction ($A - B$) |
-| `010` | **AND** | Bitwise AND ($A \ \& \ B$) |
-| `011` | **OR** | Bitwise OR ($A \ \| \ B$) |
-| `100` | **XOR** | Bitwise XOR ($A \ \text{^} \ B$) |
-| `101` | **NOT** | Bitwise NOT ($\sim A$) |
-| `110` | **Increment** | Increment ($A + 1$) |
-| `111` | **Decrement** | Decrement ($A - 1$) |
+| ALU Control | Operation |
+|---|---|
+| 000 | ADD |
+| 001 | SUB |
+| 010 | AND |
+| 011 | OR |
+| 100 | XOR |
+| 101 | NOT |
+| 110 | Increment |
+| 111 | Decrement |
 
 ---
 
